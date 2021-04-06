@@ -1,0 +1,11 @@
+container:
+  image: cirrusci/flutter:stable
+  cpu: 1
+  memory: 2G
+
+task:
+  name: Test
+  test_script: flutter test --machine > report.json
+  report_artifacts:
+    path: report.json
+    format: flutter
