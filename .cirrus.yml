@@ -7,6 +7,7 @@ task:
   name: Test
   get_script: flutter pub get
   test_script: flutter test --machine > report.json
-  report_artifacts:
-    path: report.json
-    format: flutter
+  always:
+    report_artifacts:
+      path: report.json
+      format: flutter
