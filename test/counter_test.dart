@@ -22,5 +22,9 @@ void main() {
 
       expect(counter.value, -1);
     });
+
+    test('Fail to show Cirrus annotations', () {
+      fail("Should be shown on GitHub PR");
+    });
   });
 }
